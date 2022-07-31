@@ -1,0 +1,3 @@
+[submodule "limetty-vim"]
+	path = limetty-vim
+	url = https://github.com/lime008/limetty-vim

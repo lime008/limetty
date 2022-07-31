@@ -1,0 +1,160 @@
+/**
+ * Limetty ROFI Color theme
+ *
+ * Author: lime008 (https://github.com/lime00/limetty)
+ */
+
+* {
+    red:                         {{color "cinnabar"}};
+    blue:                        {{color "picton"}};
+    lightfg:                     {{color "purp"}};
+    lightbg:                     {{color "blacklight"}};
+    foreground:                  {{color "limelight"}};
+    background:                  {{color "black"}};
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    separatorcolor:              {{color "mobster"}};
+    border-color:                {{color "purp"}};
+    selected-normal-foreground:  @foreground;
+    selected-normal-background:  @lightfg;
+    selected-active-foreground:  @background;
+    selected-active-background:  @blue;
+    selected-urgent-foreground:  @background;
+    selected-urgent-background:  @red;
+    normal-foreground:           @foreground;
+    normal-background:           @background;
+    active-foreground:           @blue;
+    active-background:           @background;
+    urgent-foreground:           @red;
+    urgent-background:           @background;
+    alternate-normal-foreground: @foreground;
+    alternate-normal-background: @lightbg;
+    alternate-active-foreground: @blue;
+    alternate-active-background: @lightbg;
+    alternate-urgent-foreground: @red;
+    alternate-urgent-background: @lightbg;
+    spacing:                     2;
+	font: "Fira Code 12";
+}
+window {
+    background-color: @background;
+    border:           2;
+	border-radius:    4px;
+    padding:          10px;
+	width: calc(100% - 80px min 800px);
+}
+mainbox {
+    border:           0;
+    padding:          0;
+}
+message {
+    border:           1px dash 0px 0px ;
+    border-color:     @separatorcolor;
+    padding:          1px ;
+}
+textbox {
+    text-color:       inherit;
+}
+
+listview {
+    fixed-height:     0;
+    border:           2px dash 0px 0px ;
+    border-color:     @separatorcolor;
+    spacing:          2px ;
+    scrollbar:        true;
+    padding:          2px 0px 0px ;
+}
+element {
+    border:           0;
+    padding:          3px 5px;
+}
+element-text {
+    text-color: inherit;
+	vertical-align: 0.5;
+}
+element-icon {
+    size: 1.2em;
+    margin: 0 10px 0 0;
+	vertical-align: 0.5;
+}
+element.selected {
+	border-radius:    5px;
+}
+element.normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+element.normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+}
+element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+}
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}
+scrollbar {
+    width:            8px ;
+    border:           0;
+    handle-color:     {{color "sheen"}};
+    handle-width:     8px ;
+    padding:          5 0 5 10px;
+}
+sidebar {
+    border:           2px dash 0px 0px ;
+    border-color:     @separatorcolor;
+}
+button {
+    spacing:          0;
+    text-color:       @normal-foreground;
+}
+button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+inputbar {
+    spacing:          0px;
+    text-color:       @normal-foreground;
+    padding:          1px ;
+    children:         [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+case-indicator {
+    spacing:          0;
+    text-color:       @normal-foreground;
+}
+entry {
+    spacing:          0;
+    text-color:       @normal-foreground;
+}
+prompt {
+    spacing:          0;
+    text-color:       {{color "lime"}};
+}
+textbox-prompt-colon {
+    expand:           false;
+    str:              ">";
+    margin:           0 0.3em 0 0.3em;
+    text-color:       {{color "frosse"}};
+}

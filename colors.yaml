@@ -1,0 +1,44 @@
+colors:
+  - name: black
+    hex: "#292640"
+    dark: true
+  - name: deepdark
+    hex: "#2a2136"
+    dark: true
+  - name: blacklight
+    hex: "#33304a"
+    dark: true
+  - name: purp
+    hex: "#594671"
+    dark: true
+  - name: mobster
+    hex: "#7f7888"
+    dark: true
+  - name: pearl
+    hex: "#a5a5a9"
+  - name: limelight
+    hex:  "#eeff96" # #f3ffb5
+  - name: lime
+    hex: "#d9ed00"
+  - name: limepeel
+    hex: "#c0cb47"
+  - name: sunglow
+    hex: "#ffbe3b"
+  - name: sundance
+    hex: "#cea85d"
+  - name: cinnabar
+    hex: "#e03d3d"
+  - name: carnation
+    hex: "#f2545b"
+  - name: frosse
+    hex: "#ee508a"
+  - name: charm
+    hex: "#d46991"
+  - name: picton
+    hex: "#2ec2e6"
+  - name: pelorous
+    hex: "#4dacc3"
+  - name: eucalyptus
+    hex: "#53e0ad"
+  - name: sheen
+    hex: "#77c6a9"
