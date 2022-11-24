@@ -16,8 +16,10 @@ colors:
     dark: true
   - name: pearl
     hex: "#a5a5a9"
+  - name: white
+    hex: "#f3ffb5"
   - name: limelight
-    hex:  "#eeff96" # #f3ffb5
+    hex:  "#eeff96" 
   - name: lime
     hex: "#d9ed00"
   - name: limepeel

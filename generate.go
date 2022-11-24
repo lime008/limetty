@@ -5,6 +5,7 @@ import (
 	"io/fs"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"text/template"
 
@@ -52,6 +53,11 @@ func main() {
 		}
 		defer f.Close()
 
+		err = f.Chmod(d.Mode())
+		if err != nil {
+			return err
+		}
+
 		tp, err := os.ReadFile(path)
 		if err != nil {
 			return err
@@ -72,6 +78,22 @@ func main() {
 					for _, c := range conf.Colors {
 						if c.Name == color {
 							return strings.TrimPrefix(c.Hex, "#")
+						}
+					}
+
+					return ""
+				},
+				"rgb": func(color string) string {
+					for _, c := range conf.Colors {
+						if c.Name == color {
+							hex := strings.TrimPrefix(c.Hex, "#")
+							values, _ := strconv.ParseUint(hex, 16, 32)
+							return fmt.Sprintf(
+								"rgb(%d, %d, %d)",
+								uint8(values>>16),
+								uint8(values>>8)&0xFF,
+								uint8(values&0xFF),
+							)
 						}
 					}
 

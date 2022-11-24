@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Limetty",
+  "theme": {
+	"images": {},
+    "colors": {
+      "toolbar": "{{rgb "purp"}}",
+      "toolbar_text": "{{rgb "limelight"}}",
+      "frame": "{{rgb "black"}}",
+      "tab_background_text": "{{rgb "pearl"}}",
+      "toolbar_field": "{{rgb "deepdark"}}",
+      "toolbar_field_text": "{{rgb "limelight"}}",
+      "toolbar_field_focus": "{{rgb "black"}}",
+      "toolbar_field_border_focus": "{{rgb "purp"}}",
+      "tab_line": "{{rgb "purp"}}",
+      "popup": "{{rgb "black"}}",
+      "popup_text": "{{rgb "limelight"}}",
+      "button_background_active": "{{rgb "blacklight"}}",
+      "button_background_hover": "{{rgb "blacklight"}}",
+      "frame_inactive": "{{rgb "blacklight"}}",
+      "icons_attention": "{{rgb "sunglow"}}",
+      "ntp_background": "{{rgb "black"}}",
+      "ntp_text": "{{rgb "limelight"}}",
+      "popup_border": "{{rgb "purp"}}",
+      "popup_highlight": "{{rgb "purp"}}",
+      "popup_highlight_text": "{{rgb "limelight"}}",
+      "sidebar": "{{rgb "black"}}",
+      "sidebar_border": "{{rgb "purp"}}",
+      "sidebar_highlight_text": "{{rgb "limelight"}}",
+      "sidebar_highlight": "{{rgb "blacklight"}}",
+      "sidebar_text": "{{rgb "limelight"}}",
+      "tab_loading": "{{rgb "lime"}}"
+    }
+  }
+}
