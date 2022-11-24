@@ -4,7 +4,7 @@ local colors = {
 	black = '{{color "black"}}',
 	white = '{{color "limelight"}}',
 	red = '{{color "carnation"}}',
-	eucalyptus = '{color "eucalyptus"}',
+	eucalyptus = '{{color "eucalyptus"}}',
 	grey = '{{color "purp"}}',
 	pearl = '{{color "pearl"}}',
 }
